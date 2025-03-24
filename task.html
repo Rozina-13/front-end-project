@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="view-toggle">
+            <button id="grid-view" class="toggle-btn active">Grid View</button>
+            <button id="list-view" class="toggle-btn">List View</button>
+        </div>
+
+        <div id="movie-collection" class="grid-view">
+            <!-- Movie Item (Grid View) Example -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200" alt="Movie Poster" class="movie-poster">
+            </div>
+            <!-- Movie Item (List View) Example -->
+            <div class="movie-item list-view-item">
+                <div class="movie-info">
+                    <h3 class="movie-title">Movie Title</h3>
+                    <p class="movie-rating">Rating: 8.5/10</p>
+                    <p class="movie-genre">Genre: Action</p>
+                    <button class="accordion">Synopsis</button>
+                    <div class="accordion-content">
+                        <p>Movie synopsis goes here...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat movie items as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
