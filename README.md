@@ -1,2 +1,38 @@
 # front-end-project
 front end project description
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB-like Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>IMDB-like Search</h1>
+        <input type="text" id="search-input" placeholder="Search for a movie..." />
+        <button id="search-btn">Search</button>
+    </header>
+
+    <!-- Movie Results -->
+    <section id="movie-results">
+        <!-- Movie results will appear here -->
+    </section>
+
+    <!-- Movie Details Modal -->
+    <div id="movie-details-modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2 id="movie-title"></h2>
+            <p id="movie-year"></p>
+            <p id="movie-genre"></p>
+            <p id="movie-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
